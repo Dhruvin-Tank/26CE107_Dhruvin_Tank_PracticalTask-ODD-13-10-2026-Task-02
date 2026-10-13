@@ -1,0 +1,140 @@
+ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 13-10-2026 | Task 02 - Library Late-Return Fine Calculator
+
+Enrollment No.:26CE107
+Name:Dhruvin Tank
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1  | Navigation link pointed to #calcuator (misspelled) | Changed href to #calculator | So the link correctly scrolls to the calculator section
+S2  | Footer used a generic <div> instead of semantic tag | Changed <div> to <footer> | Semantic HTML5 element is required for correct structure
+S3  | Missing colon in CSS: background-color #f1f6f9 | Added the colon → background-color: #f1f6f9 | CSS syntax error was preventing the background color from applying
+S4  | Selector was .pageTitle (class) but HTML has id | Changed selector to #pageTitle | Class selector cannot target an id attribute
+S5  | lateDays was calculated as value - 1 | Removed the “- 1” | Program was under-counting the number of late days
+S6  | processingCharge was set to 100 | Changed it to 10 | Policy requires processing charge of ₹10 only
+
+CODE COMPLETION / IMPLEMENTATION (briefly state what was completed)
+M1: Added charset="UTF-8" and responsive viewport meta tags in the <head>
+M2: Added <aside class="notice"> with <h2>Important Note</h2> and a sentence to check input values
+M3: Applied display:flex and justify-content:space-between to .nav-links
+M4: Applied display:grid and grid-template-columns:1fr 1fr to .cards
+M5: In media query (max-width:600px) made .cards one column and .nav-links vertical
+M6: Implemented calculateFine() to return days * books * rate
+D1: Implemented chooseRate() using if-else (Student=5, Staff=3, Visitor=10)
+D2: Implemented calculateTotal() – returns 0 if no fine, otherwise fine + processingCharge
+D3: Implemented buildBreakdown() with a for loop showing cumulative fine for each day
+
+FUNCTIONAL TEST
+Test input: 5 late days, 2 books, Student
+Observed result: Rate: ₹5 | Basic fine: ₹50 | Total including applicable processing charge: ₹60
+Breakdown shows Day 1 to Day 5 with cumulative fine ending at ₹50
+Mobile layout checked (Yes/No):Yes
+
+GIT VERSION CONTROL
+git log -1 --oneline output:
+GitHub URL (if available): ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 13-10-2026 | Task 02 - Library Late-Return Fine Calculator
+
+Enrollment No.:26CE107
+Name:Dhruvin Tank
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1  | Navigation link pointed to #calcuator (misspelled) | Changed href to #calculator | So the link correctly scrolls to the calculator section
+S2  | Footer used a generic <div> instead of semantic tag | Changed <div> to <footer> | Semantic HTML5 element is required for correct structure
+S3  | Missing colon in CSS: background-color #f1f6f9 | Added the colon → background-color: #f1f6f9 | CSS syntax error was preventing the background color from applying
+S4  | Selector was .pageTitle (class) but HTML has id | Changed selector to #pageTitle | Class selector cannot target an id attribute
+S5  | lateDays was calculated as value - 1 | Removed the “- 1” | Program was under-counting the number of late days
+S6  | processingCharge was set to 100 | Changed it to 10 | Policy requires processing charge of ₹10 only
+
+CODE COMPLETION / IMPLEMENTATION (briefly state what was completed)
+M1: Added charset="UTF-8" and responsive viewport meta tags in the <head>
+M2: Added <aside class="notice"> with <h2>Important Note</h2> and a sentence to check input values
+M3: Applied display:flex and justify-content:space-between to .nav-links
+M4: Applied display:grid and grid-template-columns:1fr 1fr to .cards
+M5: In media query (max-width:600px) made .cards one column and .nav-links vertical
+M6: Implemented calculateFine() to return days * books * rate
+D1: Implemented chooseRate() using if-else (Student=5, Staff=3, Visitor=10)
+D2: Implemented calculateTotal() – returns 0 if no fine, otherwise fine + processingCharge
+D3: Implemented buildBreakdown() with a for loop showing cumulative fine for each day
+
+FUNCTIONAL TEST
+Test input: 5 late days, 2 books, Student
+Observed result: Rate: ₹5 | Basic fine: ₹50 | Total including applicable processing charge: ₹60
+Breakdown shows Day 1 to Day 5 with cumulative fine ending at ₹50
+Mobile layout checked (Yes/No):Yes
+
+GIT VERSION CONTROL
+git log -1 --oneline output:
+GitHub URL (if available):ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 13-10-2026 | Task 02 - Library Late-Return Fine Calculator
+
+Enrollment No.:26CE107
+Name:Dhruvin Tank
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1  | Navigation link pointed to #calcuator (misspelled) | Changed href to #calculator | So the link correctly scrolls to the calculator section
+S2  | Footer used a generic <div> instead of semantic tag | Changed <div> to <footer> | Semantic HTML5 element is required for correct structure
+S3  | Missing colon in CSS: background-color #f1f6f9 | Added the colon → background-color: #f1f6f9 | CSS syntax error was preventing the background color from applying
+S4  | Selector was .pageTitle (class) but HTML has id | Changed selector to #pageTitle | Class selector cannot target an id attribute
+S5  | lateDays was calculated as value - 1 | Removed the “- 1” | Program was under-counting the number of late days
+S6  | processingCharge was set to 100 | Changed it to 10 | Policy requires processing charge of ₹10 only
+
+CODE COMPLETION / IMPLEMENTATION (briefly state what was completed)
+M1: Added charset="UTF-8" and responsive viewport meta tags in the <head>
+M2: Added <aside class="notice"> with <h2>Important Note</h2> and a sentence to check input values
+M3: Applied display:flex and justify-content:space-between to .nav-links
+M4: Applied display:grid and grid-template-columns:1fr 1fr to .cards
+M5: In media query (max-width:600px) made .cards one column and .nav-links vertical
+M6: Implemented calculateFine() to return days * books * rate
+D1: Implemented chooseRate() using if-else (Student=5, Staff=3, Visitor=10)
+D2: Implemented calculateTotal() – returns 0 if no fine, otherwise fine + processingCharge
+D3: Implemented buildBreakdown() with a for loop showing cumulative fine for each day
+
+FUNCTIONAL TEST
+Test input: 5 late days, 2 books, Student
+Observed result: Rate: ₹5 | Basic fine: ₹50 | Total including applicable processing charge: ₹60
+Breakdown shows Day 1 to Day 5 with cumulative fine ending at ₹50
+Mobile layout checked (Yes/No):Yes
+
+GIT VERSION CONTROL
+git log -1 --oneline output:
+GitHub URL (if available):ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 13-10-2026 | Task 02 - Library Late-Return Fine Calculator
+
+Enrollment No.:26CE107
+Name:Dhruvin Tank
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1  | Navigation link pointed to #calcuator (misspelled) | Changed href to #calculator | So the link correctly scrolls to the calculator section
+S2  | Footer used a generic <div> instead of semantic tag | Changed <div> to <footer> | Semantic HTML5 element is required for correct structure
+S3  | Missing colon in CSS: background-color #f1f6f9 | Added the colon → background-color: #f1f6f9 | CSS syntax error was preventing the background color from applying
+S4  | Selector was .pageTitle (class) but HTML has id | Changed selector to #pageTitle | Class selector cannot target an id attribute
+S5  | lateDays was calculated as value - 1 | Removed the “- 1” | Program was under-counting the number of late days
+S6  | processingCharge was set to 100 | Changed it to 10 | Policy requires processing charge of ₹10 only
+
+CODE COMPLETION / IMPLEMENTATION (briefly state what was completed)
+M1: Added charset="UTF-8" and responsive viewport meta tags in the <head>
+M2: Added <aside class="notice"> with <h2>Important Note</h2> and a sentence to check input values
+M3: Applied display:flex and justify-content:space-between to .nav-links
+M4: Applied display:grid and grid-template-columns:1fr 1fr to .cards
+M5: In media query (max-width:600px) made .cards one column and .nav-links vertical
+M6: Implemented calculateFine() to return days * books * rate
+D1: Implemented chooseRate() using if-else (Student=5, Staff=3, Visitor=10)
+D2: Implemented calculateTotal() – returns 0 if no fine, otherwise fine + processingCharge
+D3: Implemented buildBreakdown() with a for loop showing cumulative fine for each day
+
+FUNCTIONAL TEST
+Test input: 5 late days, 2 books, Student
+Observed result: Rate: ₹5 | Basic fine: ₹50 | Total including applicable processing charge: ₹60
+Breakdown shows Day 1 to Day 5 with cumulative fine ending at ₹50
+Mobile layout checked (Yes/No):Yes
+
+GIT VERSION CONTROL
+git log -1 --oneline output:
+GitHub URL (if available):https://github.com/Dhruvin-Tank/26CE107_Dhruvin_Tank_PracticalTask-ODD-13-10-2026-Task-02
+
+
+
